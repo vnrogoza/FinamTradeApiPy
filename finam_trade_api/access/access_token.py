@@ -46,7 +46,7 @@ class TokenClient(BaseClient):
         import httpx
 
         uri = f"{self._base_url}{url}"
-        
+
         # Используем заголовки только если use_auth_header=True и JWT-токен есть
         headers = self._auth_headers if use_auth_header else None
 
